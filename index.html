@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+       body {
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    text-align: center;
+    width: 600px;
+    background-color: #fff;
+    padding: 70px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-container img {
+    width: 250px;
+    margin: 20px 0;
+}
+
+input {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+}
+
+button {
+    width: 85%;
+    padding: 15px;
+    margin: 15px 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    border-left-color: #000000;
+}
+
+/* Gaya untuk tautan "Lupa kata sandi" */
+.password-link {
+    color: #007bff; /* Warna tautan "Lupa kata sandi" */
+}
+
+/* Tambahkan gaya untuk garis pemisah */
+.links {
+    margin-top: 10px;
+}
+
+/* Gaya untuk tombol "Masuk dengan Facebook" */
+.facebook-login {
+    margin-top: 50px;
+}
+
+.facebook-login p {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.facebook-button {
+    display: flex;
+    align-items: center;
+    color: #007bff;
+    padding: 0%;
+    border-radius: 0px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook-button img {
+    width: 25px;
+    margin-right: 10px;
+}
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="assets/img/logoig1.png" alt=" Logo">
+        <form method="post" action="login.php">
+            <input type="text" placeholder="Email atau Nomor Ponsel" name="user_email">
+            <input type="password" placeholder="Kata Sandi" name="user_password">
+            <button type="submit">Masuk</button>
+        </form>
+        <div class="links">
+            <a class="password-link" href="#">Lupa kata sandi?</a>
+            <a href="#">Dapatkan bantuan untuk masuk.</a>
+        </div>
+        <div class="facebook-login">
+            <p>Atau masuk dengan</p>
+            <a href="#" class="facebook-button">
+                <img src="assets/img/logofb1.png" alt="Facebook Logo">
+                Masuk dengan Facebook
+            </a>
+        </div>
+    </div>
+</body>
+</html>
